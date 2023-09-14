@@ -1,0 +1,18 @@
+//Questão 1
+function mostrarMensagem(){
+  console.log("Bom dia, Mundo!!!");
+}
+console.log("Bom dia, Mundo!!!");
+
+//Questão 2
+function calculaCubo(num) {
+  return num * num * num
+}
+console.log(calculaCubo(17))
+
+//Questão 3
+function areaTriangulo(a,b){
+  var area = (a,b) / 6
+  return area
+}
+console.log(areaTriangulo(3,9))
