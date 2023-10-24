@@ -1,0 +1,35 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    background: rgb(251, 63, 146);
+    background: radial-gradient(circle, rgba(251, 63, 146, 1) 0%, rgba(252, 70, 70, 1) 100%);
+}
+
+.board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    gap: 10px;
+    margin: 30px auto;
+    width: 320px;
+}
+
+.cell {
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    font-size: 24px;
+    line-height: 100px;
+    background: rgb(249, 62, 144);
+    background: radial-gradient(circle, rgba(249, 62, 144, 1) 0%, rgba(252, 70, 88, 1) 100%);
+    cursor: pointer;
+    border: 2px solid cyan;
+}
+
+.cell:hover {
+    background-color: snow;
+}
+
+.message {
+    font-size: 40px;
+    margin: 30px;
+}
