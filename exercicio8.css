@@ -1,35 +1,46 @@
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Arial', sans-serif;
     text-align: center;
-    background: rgb(251, 63, 146);
-    background: radial-gradient(circle, rgba(251, 63, 146, 1) 0%, rgba(252, 70, 70, 1) 100%);
+    background: #2980B9;
+    background: -webkit-linear-gradient(to right, #FFFFFF, #6DD5FA, #2980B9);
+    background: linear-gradient(to right, #FFFFFF, #6DD5FA, #2980B9);
+    margin: 0;
+    padding: 0;
+}
+
+.title {
+    font-size: 36px;
+    margin-top: 20px;
+    color: #333;
 }
 
 .board {
     display: grid;
-    grid-template-columns: repeat(3, 100px);
+    grid-template-columns: repeat(3, 150px);
     gap: 10px;
     margin: 30px auto;
-    width: 320px;
+    width: 450px;
 }
 
 .cell {
-    width: 100px;
-    height: 100px;
+    width: 150px;
+    height: 150px;
+    font-size: 36px;
     text-align: center;
-    font-size: 24px;
-    line-height: 100px;
-    background: rgb(249, 62, 144);
-    background: radial-gradient(circle, rgba(249, 62, 144, 1) 0%, rgba(252, 70, 88, 1) 100%);
+    line-height: 150px;
+    background-color: #413737;
     cursor: pointer;
-    border: 2px solid cyan;
+    border: 2px solid #fffbfb;
+    color: #ffffff;
+    transition: background-color 0.3s;
 }
 
 .cell:hover {
-    background-color: snow;
+    background-color: #ccc;
 }
 
 .message {
-    font-size: 40px;
-    margin: 30px;
+    font-size: 24px;
+    margin-top: 20px;
+    color: #333;
 }
